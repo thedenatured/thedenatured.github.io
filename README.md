@@ -1,1 +1,2 @@
-# thedenatured.github.io
+# site
+Files for generating thedentaured GitHub page

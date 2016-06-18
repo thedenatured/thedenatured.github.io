@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css.css"/>
+    <script src='summaryScript.js'></script>
+<!--jquery link and jquery file link-->
+
+	<title>TheDenatured</title>
+	<link rel="icon" type="image/ico" href="/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/noscript.css" />
+		</noscript>
+    <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
+<!--google analytics below-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48912873-1', 'thedenatured.com');
+  ga('send', 'pageview');
+
+</script>
+<!--google analytics above-->
+</head>
+<body>
+	<div id="titleBar">
+		<a href="/index.html"><img src="/images/badgerTitle.jpg"/></a>
+		<div id="navBar">	
+
+<!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
+
+			<a href="/index.html"><div id="selectedPage">Home</div></a>
+			<a href="/articleHome.html"><div>Articles</div></a>
+			<a href="/videoHome.html"><div>Videos</div></a>
+			<a href="http://www.youtube.com/user/TheDenaturedVideos"><div>YouTube</div></a>
+		</div>
+	</div>
+<!--elastic slideshow start-->
+
+        <div class="container">
+            
+
+            <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+                        <li>
+                            <a href="/videos/pointlessOrgans.html"><img src="cat.jpg" alt="image02" /></a>
+                            <div class="ei-title" id="sliderImageY">
+                                <h2>Sexy</h2>
+                                <h3>Men</h3>
+                            </div>
+                            <a href="/videos/pontlessOrgans.html"><p><i>See more</i></p></a>
+                        </li>                        
+                        <li>
+                            <a href="/articles/hitchhiker.html"><img src="cat.jpg" alt="image03"/></a>
+                            <div class="ei-title" id="sliderImageV">
+                                <h2>The Microscopic</h2>
+                                <h3>Hitchhiker</h3>
+                            </div>
+                            <a href="/articles/hitchhiker.html"><p><i>See more</i></p></a>
+                        </li>
+                        
+                        <li>
+                            <a href="/articles/aSmell.html"><img src="cat.jpg" alt="image01"/></a>
+                            <div class="ei-title" id="sliderImageX">
+                                <h2>A Smell Is Worth</h2>
+                                <h3>A Thousand Words</h3>
+                            </div>
+                            <a href="/articles/aSmell.html"><p><i>See more</i></p></a>
+                        </li>     
+                        
+                       
+
+                        
+                    </ul><!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+<!--slider thumbs-->                        
+                        <li><a href="#">Slide 2</a><img src="cat.jpg" alt="thumb02" /></li>
+                        <li><a href="#">Slide 3</a><img src="cat.jpg" alt="thumb03" /></li>
+                        <li><a href="#">Slide 1</a><img src="cat.jpg" alt="thumb01" /></li>
+
+
+                   
+
+                        
+
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+                
+            </div><!-- wrapper -->
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="ElasticSlideshow/js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="ElasticSlideshow/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 3000,
+					titlesFactor		: 0
+                });
+            });
+        </script>
+
+<!--elastic slideshow end-->
+
+<!--the denatured profile start-->
+	<div id="denaturedProfile">
+		<h3>The Denatured</h3>
+		<img src="/images/badger.jpg"/>
+		<p>We are a group of bio-badgers determined to uncover the most wonderfully weird bits of the natural world. Our aim is to find the most interesting goings-on in biology and break them down into accessible, amazing articles and videos.</p><br/>
+	</div>
+<!--profile end-->
+
+
+
+<!--start of rss widget/  contains google ad-->
+<div id="rssWidget">
+<!--GOOGLE AD-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Square -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4967736926232938"
+     data-ad-slot="1044577007"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- end of GOOGLE AD-->
+</div>
+<!--end of rss widget-->
+
+<!--summary boxes below-->
+<div id="latestPosts">
+    <h3>Latest Posts</h3>
+</div>
+    <table>
+<script>
+var limit = summaries.length;
+
+    for (var i = 0; i<limit;i+=3){
+    document.write(
+    '<tr><td><a href="' + summaries[i].link + '"><div class="summaryImage"><img src="' + summaries[i].image + '" alt=""/><h2><span><span class="spacer"></span>' + summaries[i].title + '</span></h2></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="' + summaries[i].link + '"><i>See more</i></a></td>' +
+    
+        '<td><a href="' + summaries[i+1].link + '"><div class="summaryImage"><img src="' + summaries[i+1].image + '" alt=""/><h2><span><span class="spacer"></span>' + summaries[i+1].title + '</span></h2></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="' + summaries[i+1].link + '"><i>See more</i></a></td>' +
+        
+        '<td><a href="' + summaries[i+2].link + '"><div class="summaryImage"><img src="' + summaries[i+2].image + '" alt =""/><h2><span><span class="spacer"></span>' + summaries[i+2].title + '</span></h2></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
+    };
+    
+    
+</script>
+	</table>
+<!--summary boxes above-->
+
+</body>
+</html>
