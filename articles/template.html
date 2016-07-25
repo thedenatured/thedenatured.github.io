@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../css.css"/>
+    <script src='../summaryScript.js'></script>
+    <script src='../authors.js'></script>
+	<script>document.write('<title>' + frack.heading + '</title>')</script>
+	<link rel="icon" type="image/ico" href="../images/favicon.ico"/>
+    <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
+<!--elastic slideshow script files-->
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/noscript.css" />
+	</noscript>
+</head>
+<body>
+	<div id="titleBar">
+		<a href="https://thedenatured.github.io/"><img src="../images/badgerWord.jpg"/></a>
+		<div id="navBar">	
+<!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
+			<a href="https://thedenatured.github.io/"><div id="selectedPage">Home</div></a>
+			<a href="https://thedenatured.github.io/articleHome.html"><div>Articles</div></a>
+			<a href="https://thedenatured.github.io/videoHome.html"><div>Videos</div></a>
+			<a href="http://www.youtube.com/user/TheDenaturedVideos"><div>YouTube</div></a>
+		</div>
+	</div>
+<!--article body-->
+<div id="denaturedProfile">
+	<script>document.write('<h3>' + frack.heading + '</h3>')</script>
+</div>
+	<div id="article">
+		<script>document.write('<img src="../' + frack.image2 + '"/>')</script>
+		<div class="articleText"><br><p>Where the well good writings will go</p>
+</div>
+	</div>
+<!--author details-->
+	<div id="author">
+		<script>document.write('<h3>' + holly.name + '</h3>')</script>
+		<script>document.write('<img src="../' + holly.portrait + '"/>')</script>
+		<script>document.write('<p>' + holly.details + '</p>')</script>
+	</div>
+<!--summary boxes-->
+<div id="latestPosts">
+    <h3>Latest Posts</h3>
+</div>
+    <table>
+		<script>
+			var limit = summaries.length;
+		    for (var i = 0; i<limit;i+=3){
+			    document.write(
+			    '<tr><td><a href="../' + summaries[i].link + '"><div class="summaryImage"><img src="../' + summaries[i].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i].title2 + "<br/>" + summaries[i].title3 + '</span></h4></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="../' + summaries[i].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+1].link + '"><div class="summaryImage"><img src="../' + summaries[i+1].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i+1].title2 + "<br/>" + summaries[i+1].title3 + '</span></h4></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="../' + summaries[i+1].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+2].link + '"><div class="summaryImage"><img src="../' + summaries[i+2].image + '" alt =""/><h4><span><span class="spacer"></span>' + summaries[i+2].title2 + "<br/>" + summaries[i+2].title3 + '</span></h4></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="../' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
+    			};
+		</script>
+	</table>
+</body>
+</html>

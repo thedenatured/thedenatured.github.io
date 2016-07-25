@@ -1,0 +1,11 @@
+var smell ={
+	heading: "A smell is worth a thousand words",
+	title2: "A smell is worth",
+	title3: "A thousand words",
+	image: "images/smell.jpg",
+	image2: "images/smell2.jpg",
+	link: "articles/smell.html",
+	describe: "Some animals produce their own natural pererfume.",
+	type: "article",
+	author: "john",
+};
