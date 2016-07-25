@@ -15,22 +15,11 @@
 			<link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/noscript.css" />
 		</noscript>
     <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
-<!--google analytics below-->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48912873-1', 'thedenatured.com');
-  ga('send', 'pageview');
-
-</script>
-<!--google analytics above-->
 </head>
 <body>
 	<div id="titleBar">
-		<a href="/index.html"><img src="images/badgerWord.jpg"/></a>
+		<a href="index.html"><img src="images/badgerWord.jpg"/></a>
 		<div id="navBar">	
 
 <!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
@@ -50,41 +39,49 @@
                 <div id="ei-slider" class="ei-slider">
                     <ul class="ei-slider-large">
                         <li>
-                            <a href="/videos/pointlessOrgans.html"><img src="cat.jpg" alt="image02" /></a>
+                            <script>document.write('<a href="/videos/pointlessOrgans.html"><img src="' + summaries[0].image2 + '" alt="image02" /></a>')</script>
                             <div class="ei-title" id="sliderImageY">
-                                <h2>Sexy</h2>
-                                <h3>Men</h3>
+                                <script>document.write('<h2>' + summaries[0].title2 + '</h2><h3>' + summaries[0].title3 + '</h3>')</script>
                             </div>
-                            <a href="/videos/pontlessOrgans.html"><p><i>See more</i></p></a>
+                            <script>document.write('<a href="' + summaries[0].link + '"><p><i>See more</i></p></a>')</script>
                         </li>                        
                         <li>
-                            <a href="/articles/hitchhiker.html"><img src="cat.jpg" alt="image03"/></a>
+                        	<script>document.write('<a href="/videos/pointlessOrgans.html"><img src="' + summaries[1].image2 + '" alt="image03" /></a>')</script>
                             <div class="ei-title" id="sliderImageV">
-                                <h2>The Microscopic</h2>
-                                <h3>Hitchhiker</h3>
+                            
+                                <script>document.write('<h2>' + summaries[1].title2 + '</h2><h3>' + summaries[1].title3 + '</h3>')</script>
                             </div>
-                            <a href="/articles/hitchhiker.html"><p><i>See more</i></p></a>
+                            <script>document.write('<a href="' + summaries[1].link + '"><p><i>See more</i></p></a>')</script>
                         </li>
                         
                         <li>
-                            <a href="/articles/aSmell.html"><img src="cat.jpg" alt="image01"/></a>
+                        	<script>document.write('<a href="/videos/pointlessOrgans.html"><img src="' + summaries[2].image2 + '" alt="image01" /></a>')</script>
                             <div class="ei-title" id="sliderImageX">
-                                <h2>A Smell Is Worth</h2>
-                                <h3>A Thousand Words</h3>
+                            
+                                <script>document.write('<h2>' + summaries[2].title2 + '</h2><h3>' + summaries[2].title3 + '</h3>')</script>
                             </div>
-                            <a href="/articles/aSmell.html"><p><i>See more</i></p></a>
+                            <script>document.write('<a href="' + summaries[2].link + '"><p><i>See more</i></p></a>')</script>
                         </li>     
                         
+                       <!--I THOUGHT IT WAS GOING SO WELL! THE CLICKABLE PART OF THE SLIDESHOW
+                       HAS FAILED ME! I THINK ITS BECAUSE OF THE SCRIPT LABELD PARTS WITHIN IT
+                       BUT HAVEN'T CHECKED
+
+                         CC		U       U	n   n	ttttt
+                        C		U       U	nn  n	  t
+                       C		U       U	n n n	  t
+                        C		 U     U	n  nn	  t
+                         CC		  U U U		n   n	  t
+-->                       
                        
 
-                        
                     </ul><!-- ei-slider-large -->
                     <ul class="ei-slider-thumbs">
                         <li class="ei-slider-element">Current</li>
 <!--slider thumbs-->                        
-                        <li><a href="#">Slide 2</a><img src="cat.jpg" alt="thumb02" /></li>
-                        <li><a href="#">Slide 3</a><img src="cat.jpg" alt="thumb03" /></li>
-                        <li><a href="#">Slide 1</a><img src="cat.jpg" alt="thumb01" /></li>
+                        <script>document.write('<li><a href="' + summaries[0].link + '">Slide 2</a><img src="'+summaries[0].image2+'" alt="thumb02" /></li>')</script>
+                        <script>document.write('<li><a href="' + summaries[1].link + '">Slide 3</a><img src="'+summaries[1].image2+'" alt="thumb02" /></li>')</script>
+                        <script>document.write('<li><a href="' + summaries[2].link + '">Slide 1</a><img src="'+summaries[2].image2+'" alt="thumb02" /></li>')</script>
 
 
                    
@@ -115,28 +112,10 @@
 <!--the denatured profile start-->
 	<div id="denaturedProfile">
 		<h3>The Denatured</h3>
-		<img src="/images/badger.jpg"/>
-		<p>We are a group of bio-badgers determined to uncover the most wonderfully weird bits of the natural world. Our aim is to find the most interesting goings-on in biology and break them down into accessible, amazing articles and videos.</p><br/>
+		<div><p>We are a group of bio-badgers determined to uncover the most wonderfully weird bits of the natural world. Our aim is to find the most interesting goings-on in biology and break them down into accessible, amazing articles and videos.</p><br/></div>
 	</div>
 <!--profile end-->
 
-
-
-<!--start of rss widget/  contains google ad-->
-<div id="rssWidget">
-<!--GOOGLE AD-->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Square -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-4967736926232938"
-     data-ad-slot="1044577007"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- end of GOOGLE AD-->
-</div>
-<!--end of rss widget-->
 
 <!--summary boxes below-->
 <div id="latestPosts">
@@ -148,17 +127,16 @@ var limit = summaries.length;
 
     for (var i = 0; i<limit;i+=3){
     document.write(
-    '<tr><td><a href="' + summaries[i].link + '"><div class="summaryImage"><img src="' + summaries[i].image + '" alt=""/><h2><span><span class="spacer"></span>' + summaries[i].title + '</span></h2></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="' + summaries[i].link + '"><i>See more</i></a></td>' +
+    '<tr><td><a href="' + summaries[i].link + '"><div class="summaryImage"><img src="' + summaries[i].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i].title2 + "<br/>" + summaries[i].title3 + '</span></h4></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="' + summaries[i].link + '"><i>See more</i></a></td>' +
     
-        '<td><a href="' + summaries[i+1].link + '"><div class="summaryImage"><img src="' + summaries[i+1].image + '" alt=""/><h2><span><span class="spacer"></span>' + summaries[i+1].title + '</span></h2></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="' + summaries[i+1].link + '"><i>See more</i></a></td>' +
+        '<td><a href="' + summaries[i+1].link + '"><div class="summaryImage"><img src="' + summaries[i+1].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i+1].title2 + "<br/>" + summaries[i+1].title3 + '</span></h4></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="' + summaries[i+1].link + '"><i>See more</i></a></td>' +
         
-        '<td><a href="' + summaries[i+2].link + '"><div class="summaryImage"><img src="' + summaries[i+2].image + '" alt =""/><h2><span><span class="spacer"></span>' + summaries[i+2].title + '</span></h2></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
+        '<td><a href="' + summaries[i+2].link + '"><div class="summaryImage"><img src="' + summaries[i+2].image + '" alt =""/><h4><span><span class="spacer"></span>' + summaries[i+2].title2 + "<br/>" + summaries[i+2].title3 + '</span></h4></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
     };
     
     
 </script>
 	</table>
 <!--summary boxes above-->
-
 </body>
 </html>
