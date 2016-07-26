@@ -10,8 +10,8 @@
 	<link rel="icon" type="image/ico" href="images/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/reset.css" />
         <link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
-		<noscript>
+<!--        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	-->	<noscript>
 			<link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/noscript.css" />
 		</noscript>
     <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
@@ -39,14 +39,16 @@
                 <div id="ei-slider" class="ei-slider">
                     <ul class="ei-slider-large">
                         <li>
-                            <script>document.write('<a href="/videos/pointlessOrgans.html"><img src="' + summaries[0].image2 + '" alt="image02" /></a>')</script>
-                            <div class="ei-title" id="sliderImageY">
+                        	<script>document.write('<a href="'+summaries[0].link + '"><img src="' + summaries[0].image2 + '" alt="image02" /></a>')</script>
+                            <div class="ei-title" id="sliderImageV">
+                            
                                 <script>document.write('<h2>' + summaries[0].title2 + '</h2><h3>' + summaries[0].title3 + '</h3>')</script>
                             </div>
                             <script>document.write('<a href="' + summaries[0].link + '"><p><i>See more</i></p></a>')</script>
-                        </li>                        
+                        </li>
+
                         <li>
-                        	<script>document.write('<a href="/videos/pointlessOrgans.html"><img src="' + summaries[1].image2 + '" alt="image03" /></a>')</script>
+                        	<script>document.write('<a href="'+summaries[1].link + '"><img src="' + summaries[1].image2 + '" alt="image03" /></a>')</script>
                             <div class="ei-title" id="sliderImageV">
                             
                                 <script>document.write('<h2>' + summaries[1].title2 + '</h2><h3>' + summaries[1].title3 + '</h3>')</script>
@@ -55,7 +57,7 @@
                         </li>
                         
                         <li>
-                        	<script>document.write('<a href="/videos/pointlessOrgans.html"><img src="' + summaries[2].image2 + '" alt="image01" /></a>')</script>
+                        	<script>document.write('<a href="'+summaries[2].link + '"><img src="' + summaries[2].image2 + '" alt="image01" /></a>')</script>
                             <div class="ei-title" id="sliderImageX">
                             
                                 <script>document.write('<h2>' + summaries[2].title2 + '</h2><h3>' + summaries[2].title3 + '</h3>')</script>
@@ -80,8 +82,8 @@
                         <li class="ei-slider-element">Current</li>
 <!--slider thumbs-->                        
                         <script>document.write('<li><a href="' + summaries[0].link + '">Slide 2</a><img src="'+summaries[0].image2+'" alt="thumb02" /></li>')</script>
-                        <script>document.write('<li><a href="' + summaries[1].link + '">Slide 3</a><img src="'+summaries[1].image2+'" alt="thumb02" /></li>')</script>
-                        <script>document.write('<li><a href="' + summaries[2].link + '">Slide 1</a><img src="'+summaries[2].image2+'" alt="thumb02" /></li>')</script>
+                        <script>document.write('<li><a href="' + summaries[1].link + '">Slide 3</a><img src="'+summaries[1].image2+'" alt="thumb03" /></li>')</script>
+                        <script>document.write('<li><a href="' + summaries[2].link + '">Slide 1</a><img src="'+summaries[2].image2+'" alt="thumb01" /></li>')</script>
 
 
                    
