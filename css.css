@@ -179,6 +179,10 @@ table a:hover {
 	height: auto;
 }
 
+iframe {
+  width:100%;
+}
+
 .articleText {
 	color: #8c8c8c;
 	font-family: Serif;
