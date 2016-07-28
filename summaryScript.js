@@ -1,3 +1,17 @@
+var adder ={
+	heading: "European Adder",
+	title2: "European",
+	title3: "Adder",
+	image: "images/adderSQ.jpg",
+	image2: "images/adder.jpg",
+	link: "videos/adder.html",
+	describe: "The European Adder is Britain's only venemous snake.",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dP0nMi7RZbE" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
+
+
 var smell ={
 	heading: "A smell is worth a thousand words",
 	title2: "A smell is worth",
@@ -61,6 +75,7 @@ var pointlessOrgans = {
     image2:"images/pointless2.jpg",
     link: "/videos/pointlessOrgans.html",
     describe: "Evolution is a tad lazy so you've got some spare bits.",
+    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/vlBbYXR7sVE" frameborder="0" allowfullscreen></iframe>',
     type: "video",
     author: "david"
     };
@@ -114,15 +129,7 @@ var teach = {
     describe: "What gets you excited about science? Apparently nothing.",
     type: "article"
 };
-var adder = {
-    title2: "European",
-    title3: "Adder",
-    image: "images/adderSQ.jpg",
-    image2:"images/adder.jpg",
-    link: "http://thedenatured.com/videos/adder.html",
-    describe: "The European Adder is Britain's only venemous snake.",
-    type: "video"
-};
+
 var fittest = {
     title2: 'Survival of',
     title3: 'The "Fittest"',
@@ -150,4 +157,4 @@ var prettyBird = {
     describe: "This bird just wants to have ugly friends.",
     type: "video"
 };
-var summaries = [chilli, smell, pointlessOrgans, hitchhiker, adder, sexyMen, zombie, dying, teach, frack, fittest, fast, prettyBird, hipster];
+var summaries = [adder, chilli, smell, pointlessOrgans, hitchhiker, sexyMen, zombie, dying, teach, frack, fittest, fast, prettyBird, hipster];
