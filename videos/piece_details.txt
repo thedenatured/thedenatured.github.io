@@ -1,0 +1,12 @@
+var adder ={
+	heading: "European Adder",
+	title2: "European",
+	title3: "Adder",
+	image: "images/adderSQ.jpg",
+	image2: "images/adder.jpg",
+	link: "articles/adder.html",
+	describe: "The European Adder is Britain's only venemous snake.",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dP0nMi7RZbE" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
