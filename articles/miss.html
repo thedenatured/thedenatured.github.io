@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../css.css"/>
+    <script src='../summaryScript.js'></script>
+    <script src='../authors.js'></script>
+	<script>document.write('<title>' + miss.heading + '</title>')</script>
+	<link rel="icon" type="image/ico" href="../images/favicon.ico"/>
+    <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
+<!--elastic slideshow script files-->
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/noscript.css" />
+	</noscript>
+</head>
+<body>
+	<div id="titleBar">
+		<a href="https://thedenatured.github.io/"><img src="../images/badgerWord.jpg"/></a>
+		<div id="navBar">	
+<!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
+			<a href="https://thedenatured.github.io/"><div >Home</div></a>
+			<a href="https://thedenatured.github.io/articleHome.html"id="selectedPage"><div>Articles</div></a>
+			<a href="https://thedenatured.github.io/videoHome.html"><div>Videos</div></a>
+			<a href="http://www.youtube.com/user/TheDenaturedVideos"><div>YouTube</div></a>
+		</div>
+	</div>
+<!--article body-->
+<div id="denaturedProfile">
+	<script>document.write('<h3>' + miss.heading + '</h3>')</script>
+</div>
+	<div id="article">
+		<script>document.write('<img src="../' + miss.image2 + '"/>')</script>
+		<div class="articleText"><br><p>Q: What does the word secrete mean?</p>
+<p>A: When somebody tells you something and you don&#39t tell anybody else</p>
+<br>
+<p>When faced with a wall of unmarked books there are but a few glimmers of light that brighten up a science teacher&#39s otherwise laborious evening; 1) Finding you have, in fact, already marked those books 2) Finding a complete, almost legible piece of work 3) Finding an answer like the one above. One of the many perks of being an educator is having an endless stream of hilarious anecdotes, of the various &#39funny answers we have been given in class&#39. On the most part these mistakes are just simple errors, that would (undoubtedly) be resolved through my effective and inspirational teaching. However each time a lesson ends I am left wondering just how many minds have been filled with knowledge that might be, quite frankly, wrong. </p>
+<br>
+<p>Now, don&#39t get me wrong, misconceptions aren&#39t always a bad thing. Besides providing entertainment, they can be a poignant means of identifying the many different ways that a scientific concept could be approached. As adults it is incredibly easy for us to accept ideas as &#39facts&#39 just because they seem logical, whereas the mind of a Bradford Year 7 student often have more creative ways of viewing a problem. My Year 8 class, for example, were the first to point out that a way of investigating the insulation properties of a coat could be to wear the coat in a room full of ice cream. Was it a somewhat logical response? Yes. Was it a sensible suggestion of a variable to control? Not really. Though often not correct, creativity lies at the heart of scientific discovery. Once upon a time the idea of humans descending from apes seemed similarly ridiculous yet, thanks to Darwin & co. Along with time spent with a class of Year 11s attempting mole calculations, and the evidence is glaringly obvious.  Misconceptions flag up potential holes in the story, meaning that, as long as we can address it, we can be more confident that our explanation holds tight. So, although we musn&#39t encourage students to keep hold of these errors, having a creative outlook to science should be something to be cherished.</p>
+<br>
+<p>Though effective as a means of &#39spell-checking&#39 our thinking, misconceptions can be incredibly damaging when left unaddressed. Some of the most concerning issues in our society arise from the ignorance of some individuals, based on misconceptions which have been incorporated into that individual&#39s understanding of the world. Although the fact several of my Year 9 pupils believe &#39tigers are just lady lions&#39 might just be a funny mistake, I was positively horrified when a student announced that &#39humans need to reproduce to survive so gay people shouldn&#39t be able to have kids because they&#39re not proper humans&#39. Misconceptions bred during childhood have the power of dictating the thoughts, feelings, and beliefs of the adults in our society which make it all the more important that children have an education which prevents such extreme ignorance from emerging. Misconceptions have the power to act, not only to stop people from fully engaging with Science, but from proper understanding of the world as a whole: one misdirection has the ability to guide an individual down a lengthy path of misunderstanding and confusion, and end up in truly damaging realms of understanding. </p>
+<br>
+<p>So what should we be doing about it? Our best to educate, I suppose. Teachers, especially in this field, spend hours trying to predict, prempt, and prevent common misconceptions that emerge from Science lessons. However there will always be those that slip through the net. There will always be misconceptions, both from students and teachers. There will always be concepts explained &#39not-quite-in-the-right-way&#39. There will always be sarcastic comments or jokes taken as gospel in the mind of a child. And there will always be answers in books that just simply don&#39t make sense, even to the most creative of minds. The key point is that these misconceptions stay here, in the classroom. Though lady-lions and rooms full of ice-cream are relatively unoffensive, it is important that these misunderstandings are addressed and not left to breed deeper, more worrying forms of ignorance. As in the words of Martin Luther King, Jr. &#39Nothing in the world is more dangerous than sincere ignorance and conscientious stupidity&#39. Now, back to my marking... </p>
+<br>
+</div>
+	</div>
+<!--author details-->
+	<div id="author">
+		<script>document.write('<h3>' + holly.name + '</h3>')</script>
+		<script>document.write('<img src="../' + holly.portrait + '"/>')</script>
+		<script>document.write('<p>' + holly.details + '</p>')</script>
+	</div>
+<!--summary boxes-->
+<div id="latestPosts">
+    <h3>Latest Posts</h3>
+</div>
+    <table>
+		<script>
+			var limit = summaries.length;
+		    for (var i = 0; i<limit;i+=3){
+			    document.write(
+			    '<tr><td><a href="../' + summaries[i].link + '"><div class="summaryImage"><img src="../' + summaries[i].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i].title2 + "<br/>" + summaries[i].title3 + '</span></h4></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="../' + summaries[i].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+1].link + '"><div class="summaryImage"><img src="../' + summaries[i+1].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i+1].title2 + "<br/>" + summaries[i+1].title3 + '</span></h4></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="../' + summaries[i+1].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+2].link + '"><div class="summaryImage"><img src="../' + summaries[i+2].image + '" alt =""/><h4><span><span class="spacer"></span>' + summaries[i+2].title2 + "<br/>" + summaries[i+2].title3 + '</span></h4></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="../' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
+    			};
+		</script>
+	</table>
+</body>
+</html>

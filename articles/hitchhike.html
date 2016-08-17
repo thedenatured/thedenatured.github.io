@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../css.css"/>
+    <script src='../summaryScript.js'></script>
+    <script src='../authors.js'></script>
+	<script>document.write('<title>' + hitchhike.heading + '</title>')</script>
+	<link rel="icon" type="image/ico" href="../images/favicon.ico"/>
+    <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
+<!--elastic slideshow script files-->
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/noscript.css" />
+	</noscript>
+</head>
+<body>
+	<div id="titleBar">
+		<a href="https://thedenatured.github.io/"><img src="../images/badgerWord.jpg"/></a>
+		<div id="navBar">	
+<!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
+			<a href="https://thedenatured.github.io/"><div >Home</div></a>
+			<a href="https://thedenatured.github.io/articleHome.html"id="selectedPage"><div>Articles</div></a>
+			<a href="https://thedenatured.github.io/videoHome.html"><div>Videos</div></a>
+			<a href="http://www.youtube.com/user/TheDenaturedVideos"><div>YouTube</div></a>
+		</div>
+	</div>
+<!--article body-->
+<div id="denaturedProfile">
+	<script>document.write('<h3>' + hitchhike.heading + '</h3>')</script>
+</div>
+	<div id="article">
+		<script>document.write('<img src="../' + hitchhike.image2 + '"/>')</script>
+		<div class="articleText"><br><p>Think of a hitchhiker and you might conjure up images of a group of carefree students on a jail break, Jim Morrison of The Doors or maybe even, for the biologists out there, a parasite tagging along for the ride but it&#39s unlikely that you thought of bacteria. There are, however, some bacteria out there which will ask for a ride to get to where they want to be.</p>
+<br> 
+<p>In the microscopic community there are some bacteria with a car, or at least the microbial equivalent. Most bacteria that can move have special structures called flagella; long proteins which stick out of the cell and spin round like propellers. In order to move, the bacterium&#39s flagella spin anticlockwise at incredibly high speeds, sometimes even over 1000 times a second. Then they stop and spin clockwise. This rapid change causes the bacterium to tumble and point in a new direction. The flagella then once again start spinning anticlockwise and the bacterium moves off in search of pastures new. Another group of bacteria, known as spirochetes, have made their entire body into a propeller. They have a specialised central axis which they spin their spiral shaped bodies around in order to move, kind of like a corkscrew but on a flat surface.</p>
+<br> 
+<p>Being motile is actually a very useful trait for a bacterium to have; mobility can make it easier to acquire nutrients, avoid toxic substances, move to better host organisms, find the best colonization sites and spread between hosts. All very useful things that make the bacterium more likely to survive and hence reproduce. So not being able to move, that can be a bit of a problem. But immobility does have the advantage of being cheaper. As any gap year student will know; travel is expensive. Unless you can make somebody else do it for you, like X. perforans does.</p>
+ <br>
+<p>There are also bacteria who don&#39t invest in a means of transportation and these bacteria tend to just stay where they are or go where the flow takes them, literally. They&#39ll go wherever they get washed off to. The bacterium Xanthomonas perforans is one of these bacteria; it has no flagella or corkscrew shape to get around with but the bacterium doesn&#39t let that doesn&#39t stop it. This bacterium has recently been shown to use special chemical messengers to call over motile bacteria and then latch on to them for transport. But not just one mind you, X. perforans likes a full royal treatment and rides a raft of mobile Paenibacillus vortex bacteria. Think Sedan chairs.</p>
+ <br>
+<p>This behaviour wasn&#39t just between X. perforans and P. vortex, the same behaviour was found between other species of Xanthomonas and motile bacteria which suggests that the behaviour may be widespread.</p>
+ <br>
+<p>For the Xanthomonas species it&#39s clear why this is a good plan: being motile is quite costly to a bacterium and but it&#39s seriously useful so why not get the best of both worlds? All of the travel, none of the fees. What&#39s not clear is why the P. vortex bacteria take part in this behaviour. It may be that the Xanthomonas bacteria free up nutrients which wouldn&#39t normally be available for the motile bacteria or it could just be that Xanthomonas sponging off the motile bacteria because hey, why have a dog and bark yourself?</p>
+<br>
+</div>
+	</div>
+<!--author details-->
+	<div id="author">
+		<script>document.write('<h3>' + john.name + '</h3>')</script>
+		<script>document.write('<img src="../' + john.portrait + '"/>')</script>
+		<script>document.write('<p>' + john.details + '</p>')</script>
+	</div>
+<!--summary boxes-->
+<div id="latestPosts">
+    <h3>Latest Posts</h3>
+</div>
+    <table>
+		<script>
+			var limit = summaries.length;
+		    for (var i = 0; i<limit;i+=3){
+			    document.write(
+			    '<tr><td><a href="../' + summaries[i].link + '"><div class="summaryImage"><img src="../' + summaries[i].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i].title2 + "<br/>" + summaries[i].title3 + '</span></h4></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="../' + summaries[i].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+1].link + '"><div class="summaryImage"><img src="../' + summaries[i+1].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i+1].title2 + "<br/>" + summaries[i+1].title3 + '</span></h4></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="../' + summaries[i+1].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+2].link + '"><div class="summaryImage"><img src="../' + summaries[i+2].image + '" alt =""/><h4><span><span class="spacer"></span>' + summaries[i+2].title2 + "<br/>" + summaries[i+2].title3 + '</span></h4></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="../' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
+    			};
+		</script>
+	</table>
+</body>
+</html>
