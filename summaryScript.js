@@ -1,9 +1,92 @@
+
+var prettyBird ={
+	heading: "Pretty bird, ugly friends",
+	title2: "Pretty bird",
+	title3: "Ugly friends",
+	image: "images/housefinch.jpg",
+	image2: "images/housefinch.jpg",
+	link: "videos/prettyBird.html",
+	describe: "This bird just wants to have ugly friends.",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4hrr55S0XX4" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
+var fittest ={
+	heading: "Survival of the Fittest",
+	title2: "Survival of",
+	title3: "the Fittest",
+	image: "images/fittest.jpg",
+	image2: "images/fittest2.jpg",
+	link: "videos/fittest.html",
+	describe: "Selection doesn't make you better. It makes you selfisher.",
+	type: "video",
+	video: '<iframe width="420" height="315" src="https://www.youtube.com/embed/NXYtz4EzWEw" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
+var whyDie ={
+	heading: "Why die?",
+	title2: "Dying?",
+	title3: "What for?",
+	image: "images/dying.jpg",
+	image2: "images/dying2.jpg",
+	link: "videos/whyDie.html",
+	describe: "Why do we grow old and die? It might seem like a bad idea.",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/XVlqsBWmMps" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
+var miss ={
+	heading: "Miss Conceptions",
+	title2: "Miss",
+	title3: "Conceptions",
+	image: "images/miss.jpg",
+	image2: "images/miss2.jpg",
+	link: "articles/miss.html",
+	describe: "The highs and lows of teaching science at school",
+	type: "article",
+	author: "holly",
+};
+var hitchhike ={
+	heading: "The microscopic hitchhiker",
+	title2: "Microscopic",
+	title3: "Hitchhiker",
+	image: "images/hitchhike.jpg",
+	image2: "images/hitchhike2.jpg",
+	link: "articles/hitchhike.html",
+	describe: "Think of a hitchhiker but really really small",
+	type: "article",
+	author: "john",
+};
+var sexyMen ={
+	heading: "Sexy Men",
+	title2: "Sexy ",
+	title3: "Men",
+	image: "images/sexyMen.jpg",
+	image2: "images/sexyMen2.jpg",
+	link: "videos/sexyMen.html",
+	describe: "Do you want to know why men are so damn sexy?",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/QanXnzYoQU0" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
+var hipster ={
+	heading: "Hipster animals",
+	title2: "Hipster",
+	title3: "Animals",
+	image: "images/kermode.jpg",
+	image2: "images/kermode2.jpg",
+	link: "videos/hipster.html",
+	describe: "Some animals choose their own unique style",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Or1WYEYh_Pg" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
 var adder ={
 	heading: "European Adder",
 	title2: "European",
 	title3: "Adder",
 	image: "images/adderSQ.jpg",
-	image2: "images/adder.jpg",
+	image2: "images/adder2.jpg",
 	link: "videos/adder.html",
 	describe: "The European Adder is Britain's only venemous snake.",
 	type: "video",
@@ -45,17 +128,7 @@ var frack ={
 	type: "article",
 	author: "holly",
 };
-var hipster ={
-	heading: "Hipster animals",
-	title2: "Hipster",
-	title3: "Animals",
-	image: "images/kermode.jpg",
-	image2: "images/kermode2.jpg",
-	link: "articles/hipster.html",
-	describe: "Some animals choose their own unique style.",
-	type: "video",
-	author: "david",
-};
+
 var fast ={
 	heading: "Blink and you'll miss it",
 	title2: "Blink and",
@@ -80,28 +153,6 @@ var pointlessOrgans = {
     author: "david"
     };
 
-var hitchhiker = {
-    heading: "The Microscopic Hitchhiker",
-    title2: "The Microscopic",
-    title3: "Hitchhiker",
-    image: "images/pointless.jpg",
-    image2:"/images/.jpg",
-    link: "http://thedenatured.com/articles/hitchhiker.html",
-    describe: "Think of a hitchhiker but really really small",
-    type: "article",
-};
-
-var sexyMen = {
-    heading:"Sexy Men",
-    title2: "Sexy",
-    title3: "Men",
-    image: "images/pointless.jpg",
-    image2:"images/.jpg",
-    link: "http://thedenatured.com/videos/sexyMen.html",
-    describe: "Do you want to know why men are so damn sexy?",
-    type: "video"
-};
-
 var zombie = {
     title2: "Real",
     title3: "Zombies",
@@ -111,34 +162,8 @@ var zombie = {
     describe: "Could there ever be real zombies? We check the science.",
     type: "video"
 };
-var dying = {
-    title2: "Dying?",
-    title3: "What For",
-    image: "images/pointless.jpg",
-    image2:"images/.jpg",
-    link: "http://thedenatured.com/videos/whyDie.html",
-    describe: "Why do we grow old and die? It might seem like a bad idea.",
-    type: "video"
-};
-var teach = {
-    title2: "Teach",
-    title3: "The Kids",
-    image: "images/pointless.jpg",
-    image2:"images/.jpg",
-    link: "http://thedenatured.com/articles/teach1.html",
-    describe: "What gets you excited about science? Apparently nothing.",
-    type: "article"
-};
 
-var fittest = {
-    title2: 'Survival of',
-    title3: 'The "Fittest"',
-    image: "images/pointless.jpg",
-    image2:"images/.jpg",
-    link: "http://thedenatured.com/videos/survivalOfTheFittest.html",
-    describe: "Selection doesn't make you better. It makes you selfish.",
-    type: "video"
-};
+
 var blink = {
     title2: "Blink and",
     title3: "You'll Miss It",
@@ -148,13 +173,5 @@ var blink = {
     describe: "Cheetah's are pretty fast but who's faster?",
     type: "article"
 };
-var prettyBird = {
-    title2: "Pretty Bird",
-    title3: "Ugly Friends",
-    image: "images/housefinch.jpg",
-    image2:"images/housefinch2.jpg",
-    link: "http://thedenatured.com/videos/prettyBirdUglyFriends.html",
-    describe: "This bird just wants to have ugly friends.",
-    type: "video"
-};
-var summaries = [adder, chilli, smell, pointlessOrgans, hitchhiker, sexyMen, zombie, dying, teach, frack, fittest, fast, prettyBird, hipster];
+
+var summaries = [miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
