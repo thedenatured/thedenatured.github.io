@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css.css"/>
+    <script src='summaryScript.js'></script>
+<!--jquery link and jquery file link-->
+
+	<title>Articles</title>
+	<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/style.css" />
+<!--        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	-->	<noscript>
+			<link rel="stylesheet" type="text/css" href="ElasticSlideshow/css/noscript.css" />
+		</noscript>
+    <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
+
+</head>
+<body>
+	<div id="titleBar">
+		<a href="index.html"><img src="images/badgerWord.jpg"/></a>
+		<div id="navBar">	
+
+<!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
+
+			<a href="/index.html"><div>Home</div></a>
+			<a href="/articleHome.html"><div id="selectedPage">Articles</div></a>
+			<a href="/videoHome.html"><div>Videos</div></a>
+			<a href="http://www.youtube.com/user/TheDenaturedVideos"><div>YouTube</div></a>
+		</div>
+	</div>
+<!--elastic slideshow start-->
+	<!--array of videos only-->
+<script>
+var articles = summaries.filter(function (el) {
+  return el.type == "article";
+});
+var limit = articles.length;
+</script>
+
+        <div class="container">
+            
+
+            <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+                        <li>
+                        	<script>document.write('<a href="'+articles[0].link + '"><img src="' + articles[0].image2 + '" alt="image02" /></a>')</script>
+                            <div class="ei-title" id="sliderImageV">
+                            
+                                <script>document.write('<h2>' + articles[0].title2 + '</h2><h3>' + articles[0].title3 + '</h3>')</script>
+                            </div>
+                            <script>document.write('<a href="' + articles[0].link + '"><p><i>See more</i></p></a>')</script>
+                        </li>
+
+                        <li>
+                        	<script>document.write('<a href="'+articles[1].link + '"><img src="' + articles[1].image2 + '" alt="image03" /></a>')</script>
+                            <div class="ei-title" id="sliderImageV">
+                            
+                                <script>document.write('<h2>' + articles[1].title2 + '</h2><h3>' + articles[1].title3 + '</h3>')</script>
+                            </div>
+                            <script>document.write('<a href="' + articles[1].link + '"><p><i>See more</i></p></a>')</script>
+                        </li>
+                        
+                        <li>
+                        	<script>document.write('<a href="'+articles[2].link + '"><img src="' + articles[2].image2 + '" alt="image01" /></a>')</script>
+                            <div class="ei-title" id="sliderImageX">
+                            
+                                <script>document.write('<h2>' + articles[2].title2 + '</h2><h3>' + articles[2].title3 + '</h3>')</script>
+                            </div>
+                            <script>document.write('<a href="' + articles[2].link + '"><p><i>See more</i></p></a>')</script>
+                        </li>     
+                        
+                          
+                       
+
+                    </ul><!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+<!--slider thumbs-->                        
+                        <script>document.write('<li><a href="' + articles[0].link + '">Slide 2</a><img src="'+articles[0].image2+'" alt="thumb02" /></li>')</script>
+                        <script>document.write('<li><a href="' + articles[1].link + '">Slide 3</a><img src="'+articles[1].image2+'" alt="thumb03" /></li>')</script>
+                        <script>document.write('<li><a href="' + articles[2].link + '">Slide 1</a><img src="'+articles[2].image2+'" alt="thumb01" /></li>')</script>
+
+
+                   
+
+                        
+
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+                
+            </div><!-- wrapper -->
+        </div>
+        <script type="text/javascript" src="ElasticSlideshow/js/jquery.min.js"></script>
+        <script type="text/javascript" src="ElasticSlideshow/js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="ElasticSlideshow/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 3000,
+					titlesFactor		: 0
+                });
+            });
+        </script>
+
+<!--elastic slideshow end-->
+
+<!--the denatured profile start-->
+	<div id="denaturedProfile">
+		<h3>The Denatured</h3>
+		<div><p>We are a group of bio-badgers determined to uncover the most wonderfully weird bits of the natural world. Our aim is to find the most interesting goings-on in biology and break them down into accessible, amazing articles and videos.</p><br>
+		<p>Please like our <a href="https://www.facebook.com/thedenatured/">Facebook<a></p>
+		<br/></div>
+	</div>
+<!--profile end-->
+
+
+<!--summary boxes below-->
+<div id="latestPosts">
+    <h3>Latest Posts</h3>
+</div>
+    <table>
+<script>
+
+    for (var i = 0; i<limit;i+=3){
+    document.write(
+    '<tr><td><a href="' + articles[i].link + '"><div class="summaryImage"><img src="' + articles[i].image + '" alt=""/><h4><span><span class="spacer"></span>' + articles[i].title2 + "<br/>" + articles[i].title3 + '</span></h4></div></a><div><p>' + articles[i].describe +  '<br/></p></div><a href="' + articles[i].link + '"><i>See more</i></a></td>' +
+    
+        '<td><a href="' + articles[i+1].link + '"><div class="summaryImage"><img src="' + articles[i+1].image + '" alt=""/><h4><span><span class="spacer"></span>' + articles[i+1].title2 + "<br/>" + articles[i+1].title3 + '</span></h4></div></a><div><p>' + articles[i+1].describe +  '<br/></p></div><a href="' + articles[i+1].link + '"><i>See more</i></a></td>' +
+        
+        '<td><a href="' + articles[i+2].link + '"><div class="summaryImage"><img src="' + articles[i+2].image + '" alt =""/><h4><span><span class="spacer"></span>' + articles[i+2].title2 + "<br/>" + articles[i+2].title3 + '</span></h4></div></a><div><p>' + articles[i+2].describe +  '<br/></p></div><a href="' +  articles[i+2].link + '"><i>See more</i></a></td></tr>');
+    };
+    
+    
+</script>
+	</table>
+<!--summary boxes above-->
+</body>
+</html>
