@@ -8,7 +8,9 @@ image2 = raw_input("image 2 ,large image relative to thedenatured.github.io: ")
 describe = raw_input("brief description for summary boxes: ")
 type = raw_input("article or video: ")
 author = raw_input("creater of the piece: ")
-video = raw_input("youtube embed iframe:")
+video = raw_input("youtube embed iframe: ")
+tweet = raw_input("twitter button? y/n: ")
+handle = raw_input("creator's twitter handle: ")
 
 
 with open('piece_details.txt','w') as pd:
@@ -72,4 +74,13 @@ with open('video_output.html','w') as f:
 	f.write(str(author))
 	f.write(str(template[1943:2004]))
 	f.write(str(author))
-	f.write(str(template[2009:len(template)]))
+	if tweet == "y":
+		f.write(str(template[2009:2037]))
+		f.write("<br><a href='https://twitter.com/")
+		f.write(str(handle))
+		f.write("' class='twitter-follow-button' data-show-count='false'>Follow @")
+		f.write(str(handle))
+		f.write("</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>")
+		f.write(str(template[2037:len(template)]))
+	else:
+		f.write(str(template[2009:len(template)]))
