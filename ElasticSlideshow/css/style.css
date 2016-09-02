@@ -5,6 +5,12 @@
 	height: 400px;
 	margin: 0 auto;
 }
+#sliderImageX{
+	background-color: rgba(5,5,5,0.4);
+}
+#sliderImageV{
+	background-color: rgba(5,5,5,0.4);
+}
 .ei-slider-loading{
 	width: 100%;
 	height: 100%;
