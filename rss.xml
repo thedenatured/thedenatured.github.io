@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>The Denatured</title>
+  <link>https://thedenatured.github.io/</link>
+  <description>Wonderfully weird biology stories</description>
+  <item>
+    <title>Miss Conceptions</title>
+    <link>https://thedenatured.github.io/articles/miss.html</link>
+    <description>The highs and lows of teaching science at school</description>
+  </item>
+  <item>
+    <title>Microscopic hitchhiker</title>
+    <link>https://thedenatured.github.io/articles/hitchhike.html</link>
+    <description>Think of a hitchhiker but really really small</description>
+  </item>
+  <item>
+    <title>European Adder</title>
+    <link>https://thedenatured.github.io/videos/adder.html</link>
+    <description>The European Adder is Britain's only venemous snake.</description>
+  </item>
+  <item>
+    <title>Dying? What for?</title>
+    <link>https://thedenatured.github.io/videos/whyDie.html</link>
+    <description>Why do we grow old and die? It might seem like a bad idea.</description>
+  </item>
+  <item>
+    <title>The unlikely Winner</title>
+    <link>https://thedenatured.github.io/articles/chilli.html</link>
+    <description>You couldn't beat a chicken in this competition.</description>
+  </item>
+  <item>
+    <title>Survival of the Fittest</title>
+    <link>https://thedenatured.github.io/videos/fittest.html</link>
+    <description>Selection doesn't make you better. It makes you selfisher.</description>
+  </item>
+  <item>
+    <title>A smell is worth a thousand words</title>
+    <link>https://thedenatured.github.io/articles/smell.html</link>
+    <description>Some animals produce their own natural pererfume.</description>
+  </item>
+  <item>
+    <title>Sexy men</title>
+    <link>https://thedenatured.github.io/videos/sexyMen.html</link>
+    <description>Do you want to know why men are so damn sexy?</description>
+  </item>
+  <item>
+    <title>What the Frack?</title>
+    <link>https://thedenatured.github.io/articles/frack.html</link>
+    <description>What the frack is fracking?</description>
+  </item>
+  <item>
+    <title>Pointless Organs</title>
+    <link>https://thedenatured.github.io/videos/pointlessOrgans.html</link>
+    <description>Evolution is a tad lazy so you've got some spare bits.</description>
+  </item>
+  <item>
+    <title>Blink and you'll miss it</title>
+    <link>https://thedenatured.github.io/articles/fast.html</link>
+    <description>Cheetah's are pretty fast, but who's faster?</description>
+  </item>
+  <item>
+    <title>Pretty bird, ugly friends</title>
+    <link>https://thedenatured.github.io/videos/prettyBird.html</link>
+    <description>This bird just wants to have ugly friends.</description>
+  </item>
+  <item>
+    <title>Hipster animals</title>
+    <link></link>
+    <description>Some animals choose their own unique style</description>
+  </item>
+</channel>
+
+</rss>
