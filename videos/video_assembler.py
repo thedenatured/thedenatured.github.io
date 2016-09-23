@@ -38,7 +38,21 @@ with open('piece_details.txt','w') as pd:
 #    type: "video",
 #    author: "david"
 #    };
-    
+
+with open('../rss.xml','r') as rss:
+	rssAllLines = rss.readlines()
+	
+with open('../rss.xml','w') as rss:
+	for x in range(0,7):
+		rss.write(rssAllLines[x])
+	rss.write("  <item>\n")
+	rss.write("    <title>%s</title>\n" % (heading))
+	rss.write("    <link>https://thedenatured.github.io/articles/%s.html</link>\n" % (var))
+	rss.write("    <description>%s</description>\n" % (describe))
+	rss.write("  </item>\n")
+	for x in range(7,len(rssAllLines)):
+		rss.write(rssAllLines[x])
+
 with open('../summaryScript.js','r') as j:
 	old_vars = j.readlines()
 	
