@@ -12,6 +12,7 @@ tweet = raw_input("twitter button? y/n: ")
 handle = raw_input("creator's twitter handle: ")
 
 
+
 with open('piece_details.txt','w') as pd:
 	pd.write('var %s ={\n' % (var))
 	pd.write('	heading: "%s",\n' % (heading))
@@ -36,7 +37,21 @@ with open('piece_details.txt','w') as pd:
 #    type: "video",
 #    author: "david"
 #    };
-    
+
+with open('../rss.xml','r') as rss:
+	rssAllLines = rss.readlines()
+	
+with open('../rss.xml','w') as rss:
+	for x in range(0,7):
+		rss.write(rssAllLines[x])
+	rss.write("  <item>\n")
+	rss.write("    <title>%s</title>\n" % (heading))
+	rss.write("    <link>https://thedenatured.github.io/articles/%s.html</link>\n" % (var))
+	rss.write("    <description>%s</description>\n" % (describe))
+	rss.write("  </item>\n")
+	for x in range(7,len(rssAllLines)):
+		rss.write(rssAllLines[x])
+
 with open('../summaryScript.js','r') as j:
 	old_vars = j.readlines()
 	
@@ -45,7 +60,7 @@ lastline = old_vars[-1][0:17] + var + ", " + old_vars[-1][17:]
 
 with open("piece_details.txt","r") as pd:
 	new_var = pd.read()
-
+		
 with open('../summaryScript.js','w') as j:
 	j.write(new_var)
 	for x in range(0,len(old_vars)-1):
@@ -80,4 +95,6 @@ with open('article_output.html','w') as f:
 		f.write(str(template[2062:len(template)]))
 	else:
 		f.write(str(template[2034:len(template)]))
+
+#update RSS feed
 
