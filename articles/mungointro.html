@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../css.css"/>
+    <script src='../summaryScript.js'></script>
+    <script src='../authors.js'></script>
+	<script>document.write('<title>' + mungointro.heading + '</title>')</script>
+	<link rel="icon" type="image/ico" href="../images/favicon.ico"/>
+    <meta name="description" content="The Denatured. A fun biology science website with videos and articles." />
+<!--elastic slideshow script files-->
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="../ElasticSlideshow/css/noscript.css" />
+	</noscript>
+</head>
+<body>
+	<div id="titleBar">
+		<a href="https://thedenatured.github.io/"><img src="../images/badgerWord.jpg"/></a>
+		<div id="navBar">	
+<!--In each page you must set the correct "selectedPage" id in the html or the css will not display correctly-->
+			<a href="https://thedenatured.github.io/"><div >Home</div></a>
+			<a href="https://thedenatured.github.io/articleHome.html"id="selectedPage"><div>Articles</div></a>
+			<a href="https://thedenatured.github.io/videoHome.html"><div>Videos</div></a>
+			<a href="http://www.youtube.com/user/TheDenaturedVideos"><div>YouTube</div></a>
+		</div>
+	</div>
+<!--article body-->
+<div id="denaturedProfile">
+	<script>document.write('<h3>' + mungointro.heading + '</h3>')</script>
+</div>
+	<div id="article">
+		<script>document.write('<img src="../' + mungointro.image2 + '"/>')</script>
+		<div class="articleText"><br>
+		<p>I am doing a PhD on mongoose incest. And when I say that, people give me funny looks. You won’t be surprised to learn that I have had to justify my research to a lot of people.</p><br>
+		<p>Most people are not big fans of incest. In fact, that’s an understatement; most <i>things</i> are not big fans of incest. Most animals, and even plants, do not like to mate with their family. The reason almost everybody is avoiding incest is “inbreeding depression”.</p><br>
+		<p>Inbred offspring tend to be less healthy, inbreeding depression refers to how unhealthy they are. For example; pedigree dogs, which are <a href="http://www.cracked.com/personal-experiences-1712-your-purebred-inbred-5-realities-dog-breeding.html">very inbred</a>, often have associated diseases and conditions; like hip dysplasia in Labradors. The Habsburgs serve as a human example, this Royal European family decided to only marry within the family. The aim was to prevent others marrying in and inheriting their wealth. So each generation was a little more inbred and a little more sickly. The culmination of this ill-advised love story was <a href="http://www.telegraph.co.uk/news/worldnews/europe/spain/5158513/Inbreeding-caused-demise-of-the-Spanish-Habsburg-dynasty-new-study-reveals.html">Charles II</a>. Charles was so inbred and unwell that he was known as “the bewitched”. The lesson then, from dogs and royalty, is that incest makes your children sick.</p><br>
+		<p>It seems however, that nobody ever told this to the banded mongoose. Banded mongooses (yes that is the correct plural) often breed with their siblings, and daughters even breed with their dads. Mothers don’t breed with their sons, but only because they don’t live long enough (small mercies I suppose). With this much inbreeding going on you’d expect banded mongooses to be a very sickly bunch indeed.</p><br>
+		<p>The first part of my research is to find out just how sickly they are. So far, they really don’t look too sickly at all, which is weird. But it is also what makes my research important, and not just a strange fascination with the depraved. As I said before, most species do suffer inbreeding depression; which is a big concern for conservation. Small populations, like those in zoos or deforested areas, have no choice but to inbreed. This is trouble. Inbreeding makes the threatened populations sick and even more likely to go extinct. Which is where my mongooses come in.</p><br>
+		<p>If we can understand why the mongooses don’t suffer inbreeding depression, perhaps we can prevent it in other species. One potential reason is purging. In short, purging is finding individuals who are healthy AND inbred to make a whole population which is both inbred AND healthy. It sounds like a good idea put that simply, but there are lots of iffy bits and very little evidence that it works. There’s one case where purging might have helped protect a captive population of Speke’s gazelle. But, there were a lot of welfare changes so it’s not a very convincing example. Understandably people are unwilling to test purging on their endangered population. Purging requires inbreeding and if it doesn’t work they’re even worse off than before.</p><br>
+		<p>So conservation at the moment tries to completely prevent inbreeding with breeding programmes. They keep careful records of who is related to whom and prevent any inbreeding. Avoiding inbreeding depression rather than curing it. But if I can show that the banded mongoose is a natural example of successful purging in the wild, it might just change how we save endangered species.</p><br>
+		<p>But, before anybody goes to the zoo and insists on more incest, there are some drawbacks. Current results suggest that, while purging is possible, there’s a large element of chance in whether or not it works. And, even if the purging is perfect, the population won’t be able to adapt to future environmental changes.</p><br>
+		<p>Hopefully by now you’re a little more interested in incest. Maybe you even think it could be useful. But we don’t have all of the answers yet, so somebody should probably stop writing blogs posts and get back to research…</p><br>
+</div>
+	</div>
+<!--author details-->
+	<div id="author">
+		<script>document.write('<h3>' + david.name + '</h3>')</script>
+		<script>document.write('<img src="../' + david.portrait + '"/>')</script>
+		<script>document.write('<p>' + david.details + '</p>')</script>
+<br><a href='https://twitter.com/suchalilnerd' class='twitter-follow-button' data-show-count='false'>Follow @suchalilnerd</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>	</div>
+<!--summary boxes-->
+<div id="latestPosts">
+    <h3>Latest Posts</h3>
+</div>
+    <table>
+		<script>
+			var limit = summaries.length;
+		    for (var i = 0; i<limit;i+=3){
+			    document.write(
+			    '<tr><td><a href="../' + summaries[i].link + '"><div class="summaryImage"><img src="../' + summaries[i].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i].title2 + "<br/>" + summaries[i].title3 + '</span></h4></div></a><div><p>' + summaries[i].describe +  '<br/></p></div><a href="../' + summaries[i].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+1].link + '"><div class="summaryImage"><img src="../' + summaries[i+1].image + '" alt=""/><h4><span><span class="spacer"></span>' + summaries[i+1].title2 + "<br/>" + summaries[i+1].title3 + '</span></h4></div></a><div><p>' + summaries[i+1].describe +  '<br/></p></div><a href="../' + summaries[i+1].link + '"><i>See more</i></a></td>' +
+		        '<td><a href="../' + summaries[i+2].link + '"><div class="summaryImage"><img src="../' + summaries[i+2].image + '" alt =""/><h4><span><span class="spacer"></span>' + summaries[i+2].title2 + "<br/>" + summaries[i+2].title3 + '</span></h4></div></a><div><p>' + summaries[i+2].describe +  '<br/></p></div><a href="../' +  summaries[i+2].link + '"><i>See more</i></a></td></tr>');
+    			};
+		</script>
+	</table>
+</body>
+</html>
