@@ -1,4 +1,14 @@
-
+var mungointro ={
+	heading: "Mongoose family love",
+	title2: "Mongoose",
+	title3: "Family Love",
+	image: "images/mongoosesq.jpg",
+	image2: "images/mongoose.jpg",
+	link: "articles/mungointro.html",
+	describe: "Mongooses families are close, maybe too close",
+	type: "article",
+	author: "david",
+};
 var prettyBird ={
 	heading: "Pretty bird, ugly friends",
 	title2: "Pretty bird",
@@ -174,4 +184,4 @@ var blink = {
     type: "article"
 };
 
-var summaries = [miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
+var summaries = [mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
