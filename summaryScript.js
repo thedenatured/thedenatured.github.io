@@ -4,7 +4,7 @@ var ljmu_video ={
 	title3: "I Do",
 	image: "images/ljmu_vid_sq.jpg",
 	image2: "images/ljmu_vid_wide.jpg",
-	link: "videos/ljmuvid.html",
+	link: "videos/ljmu_video.html",
 	describe: "LJMU asked me to make a short video about my work.",
 	type: "video",
 	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/piX2OY7y8T0" frameborder="0" allowfullscreen></iframe>',
