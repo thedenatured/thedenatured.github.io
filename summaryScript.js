@@ -1,10 +1,10 @@
-var ljmu_video ={
+var ljmuvid ={
 	heading: "My research",
 	title2: "The Reseaerch",
 	title3: "I Do",
 	image: "images/ljmu_vid_sq.jpg",
 	image2: "images/ljmu_vid_wide.jpg",
-	link: "videos/ljmu_video.html",
+	link: "videos/ljmuvid.html",
 	describe: "LJMU asked me to make a short video about my work.",
 	type: "video",
 	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/piX2OY7y8T0" frameborder="0" allowfullscreen></iframe>',
@@ -196,4 +196,4 @@ var blink = {
     type: "article"
 };
 
-var summaries = [ljmu_video, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
+var summaries = [ljmuvid, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
