@@ -1,3 +1,15 @@
+var ljmuvid ={
+	heading: "My research",
+	title2: "The Reseaerch",
+	title3: "I Do",
+	image: "images/ljmu_vid_sq.jpg",
+	image2: "images/ljmu_vid.jpg",
+	link: "videos/ljmuvid.html",
+	describe: "LJMU asked me to make a short video about my work.",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/piX2OY7y8T0" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
 var mungointro ={
 	heading: "Mongoose family love",
 	title2: "Mongoose",
@@ -184,4 +196,4 @@ var blink = {
     type: "article"
 };
 
-var summaries = [mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
+var summaries = [ljmuvid, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
