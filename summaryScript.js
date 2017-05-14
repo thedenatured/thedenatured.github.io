@@ -1,4 +1,4 @@
-var ljmuvid ={
+var ljmu_video ={
 	heading: "My research",
 	title2: "The Reseaerch",
 	title3: "I Do",
@@ -196,4 +196,4 @@ var blink = {
     type: "article"
 };
 
-var summaries = [ljmuvid, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
+var summaries = [ljmu_video, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
