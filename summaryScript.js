@@ -1,6 +1,6 @@
 var ljmuvid ={
 	heading: "My research",
-	title2: "The Reseaerch",
+	title2: "The Research",
 	title3: "I Do",
 	image: "images/ljmu_vid_sq.jpg",
 	image2: "images/ljmu_vid_wide.jpg",
