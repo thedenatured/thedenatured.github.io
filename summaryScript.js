@@ -5,7 +5,7 @@ var chameleon ={
 	image: "images/chameleon_sq.png",
 	image2: "images/chameleon_wide.png",
 	link: "videos/chameleon.html",
-	describe: "Just chilling with this colourful creature talking about why they change colour and what the locals think of them.",
+	describe: "Why they change colour and what the locals think of them.",
 	type: "video",
 	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/y86qKxE31Sg" frameborder="0" allowfullscreen></iframe>',
 	author: "david",
