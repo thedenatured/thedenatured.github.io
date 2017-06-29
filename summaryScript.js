@@ -1,6 +1,18 @@
+var chameleon ={
+	heading: "Trioceros Chameleon",
+	title2: "Three Horned",
+	title3: "Chameleon",
+	image: "images/chameleon_sq",
+	image2: "images/chameleon_wide",
+	link: "videos/chameleon.html",
+	describe: "Just chilling with this colourful creature talking about why they change colour and what the locals think of them.",
+	type: "video",
+	video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/y86qKxE31Sg" frameborder="0" allowfullscreen></iframe>',
+	author: "david",
+};
 var ljmuvid ={
 	heading: "My research",
-	title2: "The Research",
+	title2: "The Reseaerch",
 	title3: "I Do",
 	image: "images/ljmu_vid_sq.jpg",
 	image2: "images/ljmu_vid_wide.jpg",
@@ -196,4 +208,4 @@ var blink = {
     type: "article"
 };
 
-var summaries = [ljmuvid, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
+var summaries = [chameleon, ljmuvid, mungointro, miss, hitchhike, adder, whyDie, chilli, fittest, smell, sexyMen, frack, pointlessOrgans, fast, prettyBird, hipster];
