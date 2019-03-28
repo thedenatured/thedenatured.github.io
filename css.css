@@ -34,12 +34,17 @@ html {
 }
 
 #navBar div:hover {
-	color: black;
+	color: red;
 }
 
 #selectedPage {
 	font-weight: bold;
 	text-decoration: none;
+}
+
+/* Prevent the scrolling images being too large*/
+.container {
+	max-width: 50%
 }
 
 div {
